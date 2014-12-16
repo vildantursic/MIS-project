@@ -1,0 +1,95 @@
+<!--
+<div class="jumbotron jumb-top">
+	<div style="margin: 50px">
+		<h1>Shopify</h1>
+		<p>We provide best customer service</p>
+		<p><a class="btn btn-success" href="#/signin" role="button">Sing in <small>free</small></a></p>
+	</div>
+</div>
+-->	
+
+
+<div class="container">
+	<div class="row text-center" style="z-index: 2">
+		<div class="col-sm-4 col-lg-4" ng-repeat="item in items | limitTo: 6">
+          <img class="img-circle" ng-src="{{item.img}}" alt="Generic placeholder image" style="width: 200px; height: 200px;">
+          <h2>{{item.name}}</h2>
+          <p>{{item.description}}</p>
+          <p><a class="btn btn-default" href="#/items/{{item.id}}">View details »</a></p>
+        </div>
+	</div>
+
+<!--
+	<div class="row featurette">
+        <hr>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" ng-src="https://d13yacurqjgara.cloudfront.net/users/318047/screenshots/1045049/400x300.png" alt="Generic placeholder image" style="width: 400px; height: 300px;" data-holder-rendered="true">
+        </div>
+    </div>
+
+    <div class="row featurette">
+        <hr>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" ng-src="https://d13yacurqjgara.cloudfront.net/users/108888/screenshots/1045801/bibimbap-400x300.png" alt="Generic placeholder image" style="width: 400px; height: 300px;" data-holder-rendered="true">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+    </div>
+
+    <div class="row featurette">
+        <hr>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" ng-src="https://d13yacurqjgara.cloudfront.net/users/18569/screenshots/704260/leica_400x300.png" alt="Generic placeholder image" style="width: 400px; height: 300px;" data-holder-rendered="true">
+        </div>
+    </div>
+    -->
+</div>
+
+<hr>
+<div class="container-fluid" style="padding: 0">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-xs-12">
+			<div id="map_canvas" ng-controller="mapCtrl">
+				<ui-gmap-google-map 
+				center="map.center" 
+				zoom="map.zoom" 
+				draggable="true" 
+				options="options">
+
+					<ui-gmap-marker 
+					coords="marker.coords" 
+					options="marker.options"
+					idkey="marker.id">
+
+						<ui-gmap-window 
+							options="windowOptions" 
+							closeClick="closeClick()">
+			                	<div>
+									<address>
+										<strong>Shopify</strong><br>
+										<i class="fa fa-map-marker"></i>: Bosnia and Herzegovina, BA<br>
+										<strong>Zip:</strong> 71000<br>
+										<strong>City:</strong> Sarajevo<br>
+										<strong>Building:</strong> Sparkase bank<br>
+										<strong>Floor:</strong> A2-PR<br>
+										<i class="fa fa-phone"></i>: 01234 567 890
+									</address>
+								</div>
+			            </ui-gmap-window>
+					</ui-gmap-marker>
+
+				</ui-gmap-google-map>
+			</div>
+		</div>
+	</div>
+</div>

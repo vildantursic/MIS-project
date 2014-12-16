@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bee">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CODE</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+	<!-- Font awesome -->
+	<link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="bower_components/bootstrap-table/dist/bootstrap-table.min.css">
+
+  <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+	<link rel="stylesheet" href="scripts/css/style.css">
+
+  </head>
+  <body>
+
+  	  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="small-logo-container">
+            <a class="small-logo" href="#">Shopify</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-collapse collapse">
+         
+          <ul class="nav navbar-nav navbar-right">
+            <li style="padding-top: 10px"><input  class="form-control" type="text" ng-model="query" placeholder="Search"></li>
+            <li><a href="#/items">Shop</a></li>
+            <li><a href="#/statistic">My orders</a></li>
+            <li><a href="#/profile">My profile</a></li>
+            <li><a href="#/" data-toggle="modal" data-target="#myModal"><i class="fa fa-user fa-lg"></i> Login</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container-fluid big-logo-row">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 big-logo-container">
+            <h1 class="big-logo">Shopify</h1>
+          </div><!--/.col-xs-12 -->
+        </div><!--/.row -->
+      </div><!--/.container -->
+    </div><!--/.container-fluid -->
+
+   <!-- <ng-include src="'views/navbarPartialView.html'"></ng-include>  -->
+  <div class="container-fluid" style="margin-bottom: 40px; padding-left: 0; padding-right: 0">
+       <ul class="flex-menu list-unstyled">
+        <li><a href="#">Computers</a></li>
+        <li><a href="#">Mobiles</a></li>
+        <li><a href="#">Equipment</a></li>
+        <li><a href="#">TV</a></li>
+      </ul>
+
+      <ul class="list-unstyled categories">
+        <li><a class="tag-block tag-block--html" href="#/laptops">Laptop</a></li>
+        <li><a class="tag-block tag-block--css" href="#">Tablets</a></li>
+        <li><a class="tag-block tag-block--sass" href="#">Chargers</a></li>
+        <li><a class="tag-block tag-block--foundation" href="#">LCD</a></li>
+        <li><a class="tag-block tag-block--js" href="#">Desktop</a></li>
+        <li><a class="tag-block tag-block--mongo" href="#">Smartphones</a></li>
+        <li><a class="tag-block tag-block--ruby" href="#">Covers</a></li>
+        <li><a class="tag-block tag-block--rails" href="#">Smart TV</a></li>
+      </ul>
+  </div>
+
+		<div style="margin-top: 50px" ng-view></div>
+
+  	<ng-include src="'views/footerPartialView.html'"></ng-include>
+
+    <a href="#0" class="cd-top">Top</a>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  	<!-- Latest compiled and minified JavaScript -->
+  	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-charts/dist/angular-charts.min.js"></script>
+    <script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap-table/dist/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src='bower_components/lodash/dist/lodash.min.js'></script>
+    <script type="text/javascript" src='bower_components/angular-google-maps/dist/angular-google-maps.min.js'></script>
+    <script type="text/javascript" src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <script type="text/javascript" src="scripts/app/app.js"></script>
+    <script type="text/javascript" src="scripts/app/prefixfree.min.js"></script>
+    <script type="text/javascript" src="scripts/app/main.js"></script>
+    <script type="text/javascript" src="scripts/app/modernizr.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,38 @@
+/* Pure CSS Loading Clock Using a Single Div */
+.loading-clock {
+  margin: 50px auto;
+  width: 180px;
+  height: 180px;
+  border: 3px solid black;
+  border-radius: 100%;
+  position: relative;
+}
+.loading-clock:before,
+.loading-clock:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 2px;
+  left: 89px; /* half width of clock - half width of hand */
+  background: black;
+  box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+/* Animations */
+@keyframes rotate {
+  0%   { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+/* Big hand */
+.loading-clock:before {
+  top: 75px;
+  height: 90px; /* half the width/height of the clock */
+  transform-origin: 1px 15px;
+  animation: rotate .65s infinite linear;
+}
+/* Little hand */
+.loading-clock:after {
+  top: 81px;
+  height: 54px; /* top + height for little hand must = top + height for big hand */
+  transform-origin: 1px 9px;
+  animation: rotate 4.2s infinite linear; /* time should be big-hand time * 12 */
+}
