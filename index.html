@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
 
 	<link rel="stylesheet" href="scripts/css/style.css">
-
   </head>
   <body>
 
@@ -68,23 +67,34 @@
 
    <!-- <ng-include src="'views/navbarPartialView.html'"></ng-include>  -->
   <div class="container-fluid" style="margin-bottom: 40px; padding-left: 0; padding-right: 0">
-       <ul class="flex-menu list-unstyled">
-        <li><a href="#">Computers</a></li>
-        <li><a href="#">Mobiles</a></li>
-        <li><a href="#">Equipment</a></li>
-        <li><a href="#">TV</a></li>
-      </ul>
-
+    <div id='cssmenu'>
       <ul class="list-unstyled categories">
-        <li><a class="tag-block tag-block--html" href="#/laptops">Laptop</a></li>
-        <li><a class="tag-block tag-block--css" href="#">Tablets</a></li>
-        <li><a class="tag-block tag-block--sass" href="#">Chargers</a></li>
-        <li><a class="tag-block tag-block--foundation" href="#">LCD</a></li>
-        <li><a class="tag-block tag-block--js" href="#">Desktop</a></li>
-        <li><a class="tag-block tag-block--mongo" href="#">Smartphones</a></li>
-        <li><a class="tag-block tag-block--ruby" href="#">Covers</a></li>
-        <li><a class="tag-block tag-block--rails" href="#">Smart TV</a></li>
+        <li class='active has-sub'><a href='#'><span>Computers</span></a>
+          <ul>
+            <li><a class="tag-block tag-block--html" href="#/laptops">Laptop</a></li>
+            <li><a class="tag-block tag-block--js" href="#">Desktop</a></li>
+          </ul>
+        </li>
+        <li class='active has-sub'><a href='#'><span>Mobiles</span></a>
+          <ul>
+            <li><a class="tag-block tag-block--css" href="#">Tablets</a></li>
+            <li><a class="tag-block tag-block--mongo" href="#">Smartphones</a></li>
+          </ul>
+        </li>
+        <li class='active has-sub'><a href='#'><span>Equipment</span></a>
+          <ul>
+            <li><a class="tag-block tag-block--sass" href="#">Chargers</a></li>
+            <li><a class="tag-block tag-block--ruby" href="#">Covers</a></li>
+          </ul>
+        </li>
+        <li class='active has-sub'><a href='#'><span>TV</span></a>
+          <ul>
+            <li><a class="tag-block tag-block--foundation" style="width: 100%;" href="#">LCD</a></li>
+            <li><a class="tag-block tag-block--rails" href="#">Smart TV</a></li>
+          </ul>
+        </li>
       </ul>
+    </div>
 
   </div>
 
