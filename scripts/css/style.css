@@ -215,13 +215,13 @@ main p {
            Big Logo
   ********************************** */
 .big-logo-row {
-  background: gold;
+  background: dodgerblue;
 }
 .big-logo-row .big-logo-container {
   padding-top: 50px;
 }
 .big-logo-row h1 {
-  font-size: 4em;
+  font-size: 40px;
   margin: 0;
   padding: 0 0 15px 0;
 }
@@ -249,11 +249,6 @@ main p {
   .big-logo-row h1 {
     font-size: 9em;
     padding-bottom: 30px;
-  }
-}
-@media (min-width: 1200px) {
-  .big-logo-row h1 {
-    font-size: 12em;
   }
 }
 

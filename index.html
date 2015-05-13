@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CODE</title>
+    <title>Shophisticated</title>
 
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="bower_components/bootstrap-table/dist/bootstrap-table.min.css">
 
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+
 	<link rel="stylesheet" href="scripts/css/style.css">
 
   </head>
@@ -31,29 +32,35 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="small-logo-container">
-            <a class="small-logo" href="#">Shopify</a>
+          <div class="small-logo-container pull-right">
+            <a class="small-logo" href="#"></a>
             </div>
           </div>
         </div>
         <div class="navbar-collapse collapse">
          
-          <ul class="nav navbar-nav navbar-right">
-            <li style="padding-top: 10px"><input  class="form-control" type="text" ng-model="query" placeholder="Search"></li>
+          <ul class="nav navbar-nav left">
             <li><a href="#/items">Shop</a></li>
             <li><a href="#/statistic">My orders</a></li>
             <li><a href="#/profile">My profile</a></li>
             <li><a href="#/" data-toggle="modal" data-target="#myModal"><i class="fa fa-user fa-lg"></i> Login</a></li>
           </ul>
+
+          <ul class="nav navbar-nav right pull-right">
+            <li style="padding-top: 10px"><input  class="form-control" type="text" ng-model="query" placeholder="Search"></li>
+          </ul>
+
+
         </div><!--/.nav-collapse -->
       </div>
+
     </div>
 
     <div class="container-fluid big-logo-row">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 big-logo-container">
-            <h1 class="big-logo">Shopify</h1>
+            <h1 class="big-logo">Shophisticated</h1>
           </div><!--/.col-xs-12 -->
         </div><!--/.row -->
       </div><!--/.container -->
@@ -78,6 +85,7 @@
         <li><a class="tag-block tag-block--ruby" href="#">Covers</a></li>
         <li><a class="tag-block tag-block--rails" href="#">Smart TV</a></li>
       </ul>
+
   </div>
 
 		<div style="margin-top: 50px" ng-view></div>
